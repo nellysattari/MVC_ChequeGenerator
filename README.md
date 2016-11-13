@@ -7,5 +7,5 @@ Following technologies are used in the project
 - Ajax form
 - Unobtrusive loading 
 
-To get some description about development steps, have a look at this blog:[blog]
+To get some description about development steps, have a look at my [blog]
 [blog]:https://nellysattari.blogspot.com/b/post-preview?token=BmlHXVgBAAA.h_Q-wPwGyePpnrSJ4PRcIcvgQHoLeyrLdZYGT1quYZsuBuVouo7AxxgO194pGutFWG1-Aa7s3kSNTRqoXnLOhA.GbJg0IdblZwsHQYsiqOLMg&postId=5253406408554125970&type=POST 
