@@ -1,0 +1,45 @@
+﻿@model ViewModel.Model
+
+
+
+@if (!ViewData.ModelState.IsValid)
+{
+    @Html.ValidationSummary(false)
+}
+
+
+@if (Model != null)
+{
+        <div class="jumbotron">
+            <div>
+                <h2>Cheque</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        @Html.LabelFor(e => Model.Name)
+                        @Html.DisplayFor(e => Model.Name)
+                    </li>
+
+                    <li class="list-group-item">
+                        @Html.LabelFor(e => Model.ChequeDateSTR)
+                        @Html.DisplayFor(e => Model.ChequeDateSTR)
+                    </li>
+
+                    <li class="list-group-item">
+
+                        @Html.LabelFor(e => Model.InitialValue)
+                        @Html.DisplayFor(e => Model.InitialValue)
+                    </li>
+                    <li class="list-group-item">
+
+                        <span class="label label-default well-sm">
+                            @Html.DisplayFor(e => Model.ConvertedWords)
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+        }

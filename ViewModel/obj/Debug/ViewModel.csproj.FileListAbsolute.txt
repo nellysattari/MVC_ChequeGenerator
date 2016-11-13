@@ -1,0 +1,5 @@
+c:\Users\nsattari.scentregroup\documents\visual studio 2015\Projects\WebApp\ViewModel\bin\Debug\ViewModel.dll
+c:\Users\nsattari.scentregroup\documents\visual studio 2015\Projects\WebApp\ViewModel\bin\Debug\ViewModel.pdb
+c:\Users\nsattari.scentregroup\documents\visual studio 2015\Projects\WebApp\ViewModel\obj\Debug\ViewModel.dll
+c:\Users\nsattari.scentregroup\documents\visual studio 2015\Projects\WebApp\ViewModel\obj\Debug\ViewModel.pdb
+C:\Users\nsattari.SCENTREGROUP\Documents\Visual Studio 2015\Projects\WebApp\ViewModel\obj\Debug\ViewModel.csprojResolveAssemblyReference.cache

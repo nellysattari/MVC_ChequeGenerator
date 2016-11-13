@@ -1,0 +1,50 @@
+﻿
+@model  ViewModel.Model
+@using (Ajax.BeginForm("Convert", "Home", new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "ResultPartialView", InsertionMode = InsertionMode.Replace }, new { @class = "", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Getting started</h2>
+
+            <div>
+                <br />
+                @Html.TextBoxFor(x => x.Name, new { @class = "form-control", @placeholder = "Enter Reciever Name" })
+                @Html.ValidationMessageFor(x => x.Name, "", new { @class = "glyphicon" })
+
+
+                <br />
+                @Html.TextBoxFor(x => x.ChequeDate, new { @type = "text", @class = "datetimepicker form-control", @placeholder = "Click to pick a Date", @id = "datepicker", @name = "datepicker", @readonly = "readonly" })
+                @Html.ValidationMessageFor(x => x.ChequeDate, "", new { @class = "glyphicon" })
+
+                <br />
+                @Html.TextBoxFor(x => x.InitialValue, new { @class = "form-control", @placeholder = "$", @maxlength = 12 })
+                @Html.ValidationMessageFor(x => x.InitialValue, "", new { @class = "glyphicon" })
+
+                <br />
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">Print The Cheque</button>
+                </span>
+            </div>
+
+            <br />
+            <div id="ResultPartialView">@Html.Partial("_ShowWords")</div>
+
+        </div>
+
+    </div> }
+
+@section Scripts {
+
+    <script>
+        $('#datepicker').datepicker({
+            format: 'dd.mm.yyyy',
+            autoclose: true,
+            enableOnReadonly: true,
+            todayHighlight: true
+        });
+        $('#datepicker').removeAttr("data-val-date");
+
+    </script>
+
+}
